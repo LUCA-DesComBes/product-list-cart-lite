@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Text", sans-serif;
+}
+body {
+    width: 100%;
+    background-color: #FCF8F6;
+    margin: 1.5rem;
+    overflow-x: hidden;
+}
+h1 {
+    font-weight: 700;
+    color: #260F08;
+    margin-bottom: 32px;
+    font-size: 40px;
+}
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 46px;
+}
+img {
+    width: 95%;
+    object-fit: cover;
+    margin-bottom: 16px;
+}
+p {
+    margin-bottom: 4px;
+}
+.name {
+    font-weight: 400;
+    font-size: 14px;
+    color: #87635A;
+}
+.sec-para {
+    font-weight: 600;
+    font-size: 16px;
+    color: #260F08;
+}
+.price {
+    font-weight: 600;
+    font-size: 16px;
+    color: #C73B0F;
+}
+#card-product  {
+    width: 90%;
+    margin-top: 32px;
+    background-color: #fff;
+    padding: 1.5rem 1.5rem 40px 1.5rem;
+    border-radius: 12px;
+}
+h2 {
+    font-weight: 700;
+    font-size: 24px;
+    color: #C73B0F;
+    margin-bottom: 24px;
+}
+#cake-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#cake {
+    margin-top: 16px;
+    color: #87635A;
+    text-align: center;
+    font-weight: 600;
+}
+#cake-draw {
+    width: 40%;
+}
+@media screen and (min-width: 376px) {
+    body {
+        margin: 40px;
+    }
+    main {
+        width: 100%;    
+    }
+    #container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        gap: 24px;
+        width: 97%;
+    }
+    #card-product {
+    width: 95%;
+    }
+    #cake-draw {
+        width: 20%;
+    }
+}
+@media screen and (min-width: 769px){
+    body {
+        margin: 40px 112px;
+    }
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+    .div-grid {
+        width: 100%;
+    }
+    #container {
+        width: 70%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    #card-product {
+        position: relative;
+        bottom: 80px;
+        height: 35vh;
+        width: 20%;
+        margin-left: 12px;
+    }
+    #cake-draw {
+        width: 40%;
+    }
+}
